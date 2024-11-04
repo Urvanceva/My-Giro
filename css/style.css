@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.right {
+    margin-left: auto;
+}
+
+header {
+    padding: 30px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.p__header {
+    font-family: sans-serif;
+    font-size: 18px; 
+    margin-top: 13px;
+}
+
+.button1 {
+    border: none;
+    border-radius: 7px;
+    width: 214px;
+    height: 42px;
+    background-color: #FFA100;
+    color: white;
+    cursor: pointer;
+}
+
+.header__logo {
+    font-size: 32px; 
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin-right: 20px;
+    margin-top: 9px;
+    cursor: pointer;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 16px; 
+}
+
+.bg__img {
+    background-image: url(../img/fon.png);
+    width: 100%;
+    height: 880px; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.h1__main {
+    text-align: center; 
+    color: white; 
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    font-size: 60px; 
+    padding-top: 30%; 
+    line-height: 150%; 
+}
+
+.p__main { 
+    color: white; 
+    line-height: 150%; 
+    font-size: 20px;                    
+    font-family: sans-serif; 
+    text-align: center; 
+}
+
+.button__main { 
+    width: 145px; 
+    height: 42px; 
+    color: black; 
+    font-family: sans-serif; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    border: none; 
+    font-size: 14px; 
+    cursor: pointer; 
+}
+
+.center { 
+    margin-top: 30px; 
+    text-align: center; 
+}
+
+.ourplus {
+    font-size: 38px; 
+    font-family: sans-serif;
+    color: #000000;
+    text-align: left;
+}
+
+.block {
+    display: block;
+    text-align: center;
+    margin-top: 65px;
+    padding: 0 20px;
+}
+
+.ourplus__div {
+    color: #000000;
+    font-size: 14px; 
+    font-family: sans-serif;
+    margin-top: 18px;
+}
+
+.ourplus__img {
+    height: 120px;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.us {
+    font-size: 22px; 
+    font-weight: lighter;
+    color: #000000;
+    line-height: 30px;
+    font-family: sans-serif;
+    margin-top: 60px;
+}
+
+.sub {
+    width: 300px;
+    height: 40px;
+    color: white;
+    text-align: left;
+    font-size: 18px; 
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.text {
+    text-align: left;
+    width: 222px;
+    height: 46px;
+    margin-left: 40px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px; 
+    font-family: sans-serif;    
+}
+
+.buttsub {
+    width: 222px;
+    height: 48px;
+    background-color: white;
+    margin-left: 40px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+.PandM {
+    color: #000000;
+    font-family: sans-serif;
+    font-size: 20px; 
+    margin-top: 60px;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+.p3 {
+    font-size: 18px; 
+    font-family: sans-serif;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.p3:active, .p3:focus, .p3:hover {
+    background-color: #FFA100;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.sigway {
+    border: none;
+    background-color: #FFA100;
+    color: white;
+    padding: 6px;
+    font-size: 18px; 
+    font-family: sans-serif;
+}
+
+.p__card {
+    width: 50%;
+    font-size: 18px; 
+    font-family: sans-serif;
+    color: #000000;
+    line-height: 120%;
+}
+
+.price {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.img__card {
+    width: 220px;
+    height: 220px;
+}
+
+.cons__name {
+    font-family: sans-serif;
+    font-size: 20px; 
+    color: #000000;
+}
+
+.cons__work {
+    font-family: monospace;
+    font-size: 14px; 
+    color: #000000;
+    margin-top: 10px;
+}
+
+.cons__button {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px; 
+    color: white;
+    border-radius: 10px;
+    background-color: #FFA100;
+    border: none;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.marks {
+    font-weight: bold;
+    font-size: 42px; 
+    color: #696969;
+}
+
+.container__marks {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
+    background-size: cover;  
+    width: 215px;
+    height: 215px;
+}
+
+.img__selcet { background-image: url(../img/фото1.png); }
+.img__selcet2 { background-image: url(../img/foto2.png); }
+.img__selcet3 { background-image: url(../img/foto3.png); }
+.img__selcet4 { background-image: url(../img/foto4.png); }
+
+.img__p {
+    padding-top: 90px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+.footer__left {
+    width: 355px;
+}
+
+.footer__p3 {
+    margin-top: 40px;
+}
+
+.footer__p2 {
+    margin-top: 20px;
+}
+
+.footer__p {
+    color: #696969;
+    font-size: 16px; 
+    font-family: sans-serif;
+    line-height: 110%;
+}
+
+h5 {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px; 
+}
+
+.div__footer {
+    margin-left: 20px;
+}
+
+.cons__img {
+    width: auto;
+    height: auto;
+}
+
+.cons__div {
+    width: auto;
+    height: auto;
+    background-color: #FBFBFB; 
+    padding: 20px;
+}
+
+.row__cons {
+    display: flex;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1000px;
+    }   
+    .container__marks {
+        max-width: 1000px;
+    }
+    .marks {
+        font-size: 32px; 
+    }
+}
+
+@media(max-width: 1180px) {
+    .container {
+        max-width: 800px;
+    }
+    .img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
+        width: 140px;
+        height: 140px;
+    }
+    .img__p {
+        padding-top: 60px;
+        font-size: 12px; 
+    }
+}
+
+@media(max-width:1100px) {
+    .marks {
+        font-size: 28px; 
+    }
+    .container {
+        width: auto;
+    }
+}
+
+@media (max-width:786px) {
+    .container {
+        max-width: 560px;
+    }
+    .row__cons {
+        display: block;
+    }
+}
