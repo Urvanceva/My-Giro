@@ -1,16 +1,18 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Используем box-sizing для более предсказуемых расчётов */
 }
 
 .container {
     max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 0 20px; /* Добавлено отступ для контейнера */
 }
 
 .row {
     display: flex;
+    flex-wrap: wrap; /* Позволяет элементам оборачиваться на новую строку */
 }
 
 .right {
@@ -34,7 +36,7 @@ ul {
 .button1 {
     border: none;
     border-radius: 7px;
-    width: 214px;
+    min-width: 214px; /* Минимальная ширина */
     height: 42px;
     background-color: #FFA100;
     color: white;
@@ -110,7 +112,6 @@ li {
 }
 
 .block {
-    display: block;
     text-align: center;
     margin-top: 65px;
     padding: 0 20px;
@@ -152,8 +153,7 @@ li {
 
 .text {
     text-align: left;
-    width: 222px;
-    height: 46px;
+    width: calc(100% - 40px);
     margin-left: 40px;
     background: transparent;
     border: 1px solid white;
@@ -163,10 +163,9 @@ li {
 }
 
 .buttsub {
-    width: 222px;
+    width: 100%;
     height: 48px;
     background-color: white;
-    margin-left: 40px;
     border: none;
     cursor: pointer;
     color: black;
@@ -192,7 +191,9 @@ li {
     margin-left: 20px;
 }
 
-.p3:active, .p3:focus, .p3:hover {
+.p3:active,
+.p3:focus,
+.p3:hover {
     background-color: #FFA100;
     cursor: pointer;
     color: white;
@@ -210,7 +211,7 @@ li {
 }
 
 .p__card {
-    width: 50%;
+    flex: 1 1 45%; /* Гибкое поведение для карточек */
     font-size: 18px; 
     font-family: sans-serif;
     color: #000000;
@@ -262,14 +263,17 @@ li {
 
 .container__marks {
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto; /* Центрирование контейнера */
 }
 
-.img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
+.img__selcet,
+.img__selcet2,
+.img__selcet3,
+.img__selcet4 {
     background-size: cover;  
-    width: 215px;
+    flex: 1 1 45%; /* Гибкая ширина */
     height: 215px;
+    margin: 10px; /* Отступы между изображениями */
 }
 
 .img__selcet { background-image: url(../img/фото1.png); }
@@ -295,7 +299,7 @@ li {
 .footer__p2 {
     margin-top: 20px;
 }
- 
+
 .footer__p {
     color: #696969;
     font-size: 16px; 
@@ -327,6 +331,7 @@ h5 {
 
 .row__cons {
     display: flex;
+    flex-wrap: wrap; /* Позволяет элементам оборачиваться на новую строку */
 }
 
 /* Основные стили для мобильных устройств */
@@ -340,22 +345,21 @@ h5 {
         margin-top: 10px;
     }
 
-    .buttsub {
-        width: 100%;
-        height: 48px;
+    .buttsub,
+    .button1 {
+        width: 100%; /* Полная ширина для кнопок */
         margin-left: 0; 
     }
 
     .text {
-        width: calc(100% - 40px);
+        width: auto; /* Ширина текста на 100% */
         margin-left: 0;
-        padding: 10px; /* Добавим немного внутреннего отступа */
+        padding: 10px; /* Отступы */
     }
 
     .img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
         width: 100%;
-        height: auto; /* Позволяем адаптироваться в зависимости от ширины */
-        margin-bottom: 10px; /* Отступ для визуального разделения */
+        height: auto; /* Адаптивность в зависимости от ширины */
     }
 
     .h1__main {
@@ -368,16 +372,23 @@ h5 {
     }
 
     .row {
-        flex-direction: column; /* Изменяем направление для мобильных */
+        flex-direction: column; /* Вертикальное расположение элементов */
     }
 
     .footer__left {
-        width: 100%; /* Удаляем фиксированную ширину */
+        width: 100%; /* Удалена фиксированная ширина */
     }
 
-    .footer__p, .footer__p2, .footer__p3 {
-        margin-top: 10px; /* Уменьшаем отступы в мобильной версии */
-        font-size: 14px;  /* Меньший шрифт для мобильного */
+    .footer__p,
+    .footer__p2,
+    .footer__p3 {
+        margin-top: 10px; /* Уменьшены отступы */
+        font-size: 14px;  /* Меньший шрифт */
+    }
+
+    .p__card {
+        flex: 1 1 100%; /* Полная ширина для карточек */
+        margin: 10px 0; /* Отступы между карточками */
     }
 }
 
@@ -395,17 +406,18 @@ h5 {
         font-size: 19px; 
     }
 
-    .button1 {
-        width: 100%; /* Полная ширина кнопки */
-    }
-
+    .button1,
     .buttsub {
-        width: 100%; /* Полная ширина кнопки на планшете */
+        width: 100%; /* Полная ширина для кнопок на планшете */
     }
 
-    /* Добавим немного отступа для блоков */
     .block {
-        margin-top: 40px;
+        margin-top: 40px; /* Отступы для блоков */
+    }
+
+    .p__card {
+        flex: 1 1 48%; /* Две карточки в ряд */
+        margin: 1%; /* Интервал между карточками */
     }
 }
 
@@ -425,13 +437,12 @@ h5 {
     .container {
         max-width: 800px;
     }
-    .img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
+    .img__selcet,
+    .img__selcet2,
+    .img__selcet3,
+    .img__selcet4 {
         width: 140px;
         height: 140px;
-    }
-    .img__p {
-        padding-top: 60px;
-        font-size: 12px; 
     }
 }
 
@@ -448,7 +459,8 @@ h5 {
     .container {
         max-width: 560px;
     }
+
     .row__cons {
-        display: block;
+        display: block; /* Становятся блочными для мобильных устройств */
     }
 }
