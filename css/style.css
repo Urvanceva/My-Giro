@@ -281,7 +281,7 @@ li {
     padding-top: 90px;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 18px; 
+    font-size: 20px; 
 }
 
 .footer__left {
@@ -295,7 +295,7 @@ li {
 .footer__p2 {
     margin-top: 20px;
 }
-
+ 
 .footer__p {
     color: #696969;
     font-size: 16px; 
@@ -329,6 +329,86 @@ h5 {
     display: flex;
 }
 
+/* Основные стили для мобильных устройств */
+@media (max-width: 480px) {
+    .header__logo {
+        font-size: 24px; 
+    }
+    
+    .p__header {
+        font-size: 16px; 
+        margin-top: 10px;
+    }
+
+    .buttsub {
+        width: 100%;
+        height: 48px;
+        margin-left: 0; 
+    }
+
+    .text {
+        width: calc(100% - 40px);
+        margin-left: 0;
+        padding: 10px; /* Добавим немного внутреннего отступа */
+    }
+
+    .img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
+        width: 100%;
+        height: auto; /* Позволяем адаптироваться в зависимости от ширины */
+        margin-bottom: 10px; /* Отступ для визуального разделения */
+    }
+
+    .h1__main {
+        font-size: 36px; 
+        padding-top: 20%;
+    }
+
+    .p__main {
+        font-size: 18px; 
+    }
+
+    .row {
+        flex-direction: column; /* Изменяем направление для мобильных */
+    }
+
+    .footer__left {
+        width: 100%; /* Удаляем фиксированную ширину */
+    }
+
+    .footer__p, .footer__p2, .footer__p3 {
+        margin-top: 10px; /* Уменьшаем отступы в мобильной версии */
+        font-size: 14px;  /* Меньший шрифт для мобильного */
+    }
+}
+
+/* Пример улучшений для планшетов */
+@media (min-width: 481px) and (max-width: 768px) {
+    .header__logo {
+        font-size: 28px; 
+    }
+
+    .row {
+        flex-direction: row; /* Возвращаем к строкам на планшете */
+    }
+
+    .p__main {
+        font-size: 19px; 
+    }
+
+    .button1 {
+        width: 100%; /* Полная ширина кнопки */
+    }
+
+    .buttsub {
+        width: 100%; /* Полная ширина кнопки на планшете */
+    }
+
+    /* Добавим немного отступа для блоков */
+    .block {
+        margin-top: 40px;
+    }
+}
+
 @media (max-width: 1300px) {
     .container {
         max-width: 1000px;
@@ -346,12 +426,12 @@ h5 {
         max-width: 800px;
     }
     .img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
-        width: 170px;
-        height: 170px;
+        width: 140px;
+        height: 140px;
     }
     .img__p {
-        padding-top: 80px;
-        font-size: 14px; 
+        padding-top: 60px;
+        font-size: 12px; 
     }
 }
 
