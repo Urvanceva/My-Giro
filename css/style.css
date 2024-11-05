@@ -1,18 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .container {
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .row {
     display: flex;
-    flex-wrap: wrap; 
 }
 
 .right {
@@ -36,7 +34,7 @@ ul {
 .button1 {
     border: none;
     border-radius: 7px;
-    min-width: 214px; 
+    width: 214px;
     height: 42px;
     background-color: #FFA100;
     color: white;
@@ -112,6 +110,7 @@ li {
 }
 
 .block {
+    display: block;
     text-align: center;
     margin-top: 65px;
     padding: 0 20px;
@@ -119,9 +118,9 @@ li {
 
 .ourplus__div {
     color: #000000;
-    font-size: 20px; 
+    font-size: 14px; 
     font-family: sans-serif;
-    margin-top: 26px;
+    margin-top: 18px;
 }
 
 .ourplus__img {
@@ -153,7 +152,8 @@ li {
 
 .text {
     text-align: left;
-    width: calc(100% - 40px);
+    width: 222px;
+    height: 46px;
     margin-left: 40px;
     background: transparent;
     border: 1px solid white;
@@ -163,9 +163,10 @@ li {
 }
 
 .buttsub {
-    width: 100%;
+    width: 222px;
     height: 48px;
     background-color: white;
+    margin-left: 40px;
     border: none;
     cursor: pointer;
     color: black;
@@ -191,9 +192,7 @@ li {
     margin-left: 20px;
 }
 
-.p3:active,
-.p3:focus,
-.p3:hover {
+.p3:active, .p3:focus, .p3:hover {
     background-color: #FFA100;
     cursor: pointer;
     color: white;
@@ -211,7 +210,7 @@ li {
 }
 
 .p__card {
-    flex: 1 1 45%; 
+    width: 50%;
     font-size: 18px; 
     font-family: sans-serif;
     color: #000000;
@@ -263,17 +262,14 @@ li {
 
 .container__marks {
     max-width: 1600px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.img__selcet,
-.img__selcet2,
-.img__selcet3,
-.img__selcet4 {
+.img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
     background-size: cover;  
-    flex: 1 1 45%; 
+    width: 215px;
     height: 215px;
-    margin: 10px; 
 }
 
 .img__selcet { background-image: url(../img/фото1.png); }
@@ -299,7 +295,7 @@ li {
 .footer__p2 {
     margin-top: 20px;
 }
-
+ 
 .footer__p {
     color: #696969;
     font-size: 16px; 
@@ -331,94 +327,6 @@ h5 {
 
 .row__cons {
     display: flex;
-    flex-wrap: wrap; 
-}
-
-
-@media (max-width: 480px) {
-    .header__logo {
-        font-size: 24px; 
-    }
-    
-    .p__header {
-        font-size: 16px; 
-        margin-top: 10px;
-    }
-
-    .buttsub,
-    .button1 {
-        width: 100%; 
-        margin-left: 0; 
-    }
-
-    .text {
-        width: auto;
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    .img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
-        width: 100%;
-        height: auto; /* Адаптивность в зависимости от ширины */
-    }
-
-    .h1__main {
-        font-size: 36px; 
-        padding-top: 20%;
-    }
-
-    .p__main {
-        font-size: 18px; 
-    }
-
-    .row {
-        flex-direction: column; /* Вертикальное расположение элементов */
-    }
-
-    .footer__left {
-        width: 100%; 
-    }
-
-    .footer__p,
-    .footer__p2,
-    .footer__p3 {
-        margin-top: 10px; /* Уменьшены отступы */
-        font-size: 14px; 
-    }
-
-    .p__card {
-        flex: 1 1 100%; 
-        margin: 10px 0; 
-    }
-}
-
-
-@media (min-width: 481px) and (max-width: 768px) {
-    .header__logo {
-        font-size: 28px; 
-    }
-
-    .row {
-        flex-direction: row; 
-    }
-
-    .p__main {
-        font-size: 19px; 
-    }
-
-    .button1,
-    .buttsub {
-        width: 100%; 
-    }
-
-    .block {
-        margin-top: 40px; 
-    }
-
-    .p__card {
-        flex: 1 1 48%; 
-        margin: 1%; 
-    }
 }
 
 @media (max-width: 1300px) {
@@ -437,12 +345,13 @@ h5 {
     .container {
         max-width: 800px;
     }
-    .img__selcet,
-    .img__selcet2,
-    .img__selcet3,
-    .img__selcet4 {
+    .img__selcet, .img__selcet2, .img__selcet3, .img__selcet4 {
         width: 140px;
         height: 140px;
+    }
+    .img__p {
+        padding-top: 60px;
+        font-size: 12px; 
     }
 }
 
@@ -459,8 +368,7 @@ h5 {
     .container {
         max-width: 560px;
     }
-
     .row__cons {
-        display: block; /* Становятся блочными для мобильных устройств */
+        display: block;
     }
 }
